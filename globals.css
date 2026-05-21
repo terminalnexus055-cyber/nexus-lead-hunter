@@ -1,0 +1,54 @@
+/* styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #09090B;
+  --surface: #111113;
+  --surface2: #18181B;
+  --surface3: #1F1F23;
+  --border: #27272A;
+  --border2: #3F3F46;
+  --text: #FAFAFA;
+  --muted: #71717A;
+  --muted2: #A1A1AA;
+  --green: #22C55E;
+  --green-dim: #052E16;
+  --amber: #F59E0B;
+  --amber-dim: #1C1300;
+  --red: #EF4444;
+  --red-dim: #1F0000;
+  --blue: #3B82F6;
+  --blue-dim: #0A1628;
+  --accent: #6366F1;
+  --accent-dim: #1A1A40;
+  --orange: #F97316;
+  --font-sans: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2371717A' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 28px !important;
+}
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+
+a { color: inherit; }
